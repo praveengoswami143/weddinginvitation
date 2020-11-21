@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Invetation</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="containerr" id="id">
+		<header>
+			<div class="logo">
+			<a href=""><img src="http://pavlyukpetr.com/projects/wedding-flowers/img/rsvp-flower.png"></a>
+			</div>
+			<nav>
+				<a href="#id">Home</a>
+				<a href="#event">Event</a>
+				<a href="#date">Date</a>
+			</nav>
+		</header>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="left-content">
+				<p>@Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat.</p>
+			</div>
+			<div class="right-content">
+				<div class="circle"><img src="didi.jpeg"></div>
+				<div class="circle"><img src="bro.jpeg"></div>
+			</div>
+		</div>
+	</div>
+	<div class="story">
+		<div class="center">
+			<img src="http://pavlyukpetr.com/projects/wedding-flowers/img/story-flowers.png">
+			<h1>Wedding Invitaton</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur.</p>
+		</div>
+	</div>
+
+	<div class="date" id="date">
+		<img src="http://pavlyukpetr.com/projects/wedding-flowers/img/date-flowers.png">
+		<div class="timer">
+			<h1>Dec 06, 2020</h1>
+			<p>The Paradise Garden</p>
+			<p>Bodla, Agra</p>
+		</div>
+		<div class="countdown">
+			<p id="demo"></p>
+		</div>
+	</div>
+
+	<div class="avenue" id="event">
+		<h1 style="font-size: 50px;">Wedding events</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+		<div class="row1">
+			<div class="left-avenue">
+				<img src="http://pavlyukpetr.com/projects/wedding-flowers/img/ceremony.png">
+			</div>
+			<div class="right-avenue">
+				<h2>Ceremony</h2>
+				<p><i class="fas fa-map-marker-alt"></i> Paradise Garden, Bodla road, maruti state, 100 futa road, agra (U.P)</p>
+				<p><i class="far fa-clock"></i> 09:00 - 10:30, Dec 06, 2020</p>
+				<h2>Dinner</h2>
+				<p><i class="fas fa-map-marker-alt"></i> Paradise Garden, Bodla road, maruti state, 100 futa road, agra</p>
+				<p><i class="far fa-clock"></i> 09:00 - 10:30, Dec 06, 2020</p>
+			</div>
+			</div>
+		</div>
+	</div>
+	<footer>© copyright, all rights reserved | designed by Praveen.</footer>
+
+
+
+
+
+	<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Dec 6, 2020 15:37:25").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+
+  // If the count down is finished, write some text
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+</body>
+</html>

@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Cedarville Cursive', cursive;
+}
+body{
+	text-align: center;
+	overflow-x: hidden;
+}
+header{
+	height: 100px;
+	width: 100%;
+	background: #2c3e50;
+	z-index: 1;
+	position: fixed;
+}
+.logo{
+	width: 30%;
+	float: left;
+}
+.logo img{
+	width: 250px;
+	height: auto;
+}
+nav{
+	float: right;
+	line-height: 100px;
+}
+nav a{
+	text-decoration: none;
+	letter-spacing: 4px;
+	font-size: 20px;
+	margin-right: 50px;
+	color: #fff;
+}
+.container{
+	width: 100%;
+	height: auto;
+	background: #FD7272;
+}
+.row{
+	width: 100%;
+	padding-top: 110px;
+	display: flex;
+}
+.left-content{
+	width: 40%;
+	padding: 120px 20px 20px 50px; 
+}
+.left-content p{
+	font-size: 20px;
+}
+.right-content{
+	width: 60%;
+	display: flex;
+	justify-content: center;
+	padding: 60px 0 20px 0; 
+}
+.right-content .circle{
+	width: 250px;
+	height: 250px;
+	border-radius: 50%;
+	margin-left: 50px;
+	box-shadow: 0px 0px 25px -10px rgba(0, 0, 0, 0.5);
+	overflow: hidden;
+}
+.right-content .circle img{
+	width: 115%;
+	height: auto;
+	object-fit: cover;
+	margin: -90px 0 0 -20px;
+}
+.story{
+	width: 100%;
+	display: grid;
+	justify-content: center;
+	place-items: center;
+}
+.center{
+	width: 50%;
+	height: auto;
+	padding: 40px;
+}
+.center img{
+	width: 350px;
+	height: auto;
+}
+.center h1{
+	font-size: 50px;
+}
+p{
+	font-size: 20px;
+	margin-left: auto;
+}
+.date{
+	width: 100%;
+	height: auto;
+	display: grid;
+	justify-content: center;
+	place-items: center;
+	background-color: #fdfd;
+	padding: 20px;
+}
+.date img{
+	width: 300px;
+	height: auto;
+}
+.date h1{
+	font-size: 60px;
+}
+.date p{
+	font-size: 25px;
+	font-family: 'Playfair Display', serif;
+}
+.countdown p{
+	font-size: 100px;
+}
+.avenue{
+	width: 100%;
+	height: auto;
+	padding: 30px 10px 10px 10px;
+	display: grid;
+	justify-content: center;
+	place-items: center;
+}
+.avenue img{
+	width: 500px;
+	height: 300px;
+}
+.avenue p{
+	width: 100%;
+	padding-bottom: 20px;
+}
+.row1{
+	width: 100%;
+	display: flex;
+}
+.left-avenue{
+	width: 50%;
+	height: auto;
+}
+.right-avenue{
+	width: 50%;
+	height: auto;
+	padding: 20px;
+}
+.right-avenue p{
+	font-family: 'Playfair Display', serif;
+}
+footer{
+	width: 100%;
+	height: 50px;
+	background-color: #2c3e50;
+	color: #fff;
+	padding-top: 25px;
+	font-size: 20px;
+}
+
+
+@media (max-width: 960px){
+.logo{
+	width: 20%;
+	float: left;
+}
+.logo img{
+	width: 200px;
+	height: auto;
+}
+nav a{
+	text-decoration: none;
+	letter-spacing: 3px;
+	font-size: 20px;
+	margin-right: 40px;
+	color: #fff;
+}
+.container{
+	width: 100%;
+	height: auto;
+	background: #FD7272;
+}
+.row{
+	width: 80%;
+	padding-top: 80px;
+	display: block;
+}
+.left-content{
+	width: 100%;
+	padding: 120px 20px 20px 50px; 
+}
+.left-content p{
+	font-size: 20px;
+}
+.right-content{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	padding: 20px 0; 
+}
+.right-content .circle{
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	box-shadow: 0px 0px 40px -7px rgba(0, 0, 0, 0.5);
+	overflow: hidden;
+}
+.right-content .circle img{
+	width: 110%;
+	height: auto;
+	object-fit: cover;
+	margin: -20px 0 0 -10px;
+}
+.story{
+	width: 100%;
+	display: grid;
+	justify-content: center;
+	place-items: center;
+}
+.center{
+	width: 80%;
+	height: auto;
+}
+.center img{
+	width: 300px;
+	height: auto;
+}
+.center h1{
+	font-size: 35px;
+}
+p{
+	font-size: 20px;
+}
+.date{
+	width: 90%;
+	height: auto;
+	display: grid;
+	justify-content: center;
+	place-items: center;
+	background-color: #fdfd;
+	padding: 20px;
+}
+.date img{
+	width: 250px;
+	height: auto;
+}
+.date h1{
+	font-size: 50px;
+}
+.date p{
+	font-size: 20px;
+	font-family: 'Playfair Display', serif;
+}
+.countdown #demo{
+	font-size: 50px;
+}
+.avenue{
+	width: 100%;
+	height: auto;
+	padding: 20px 0;
+	display: grid;
+	justify-content: center;
+	place-items: center;
+}
+.avenue p{
+	width: 90%;
+	padding: 10px;
+}
+.row1{
+	width: 80%;
+	display: block;
+}
+.left-avenue{
+	width: 50%;
+	height: auto;
+}
+.avenue img{
+	width: 400px;
+	height: 250px;
+}
+.right-avenue{
+	width: 100%;
+	weight: auto;
+}
+.right-avenue p{
+	font-family: 'Playfair Display', serif;
+}
+footer{
+	width: 100%;
+	height: 50px;
+	background-color: #2c3e50;
+	color: #fff;
+	padding-top: 25px;
+	font-size: 18px;
+}
